@@ -12,7 +12,7 @@ const getAllPrs = async (req, res) => {
 
 const createPr = async (req, res) => {
     if (!bodyValidator(req)) throw new BodyNotSent();
-    const result = await prRepository.create(req.body)
+    const result = await prRepository.create(req.body);
     if (!result) throw new ServerUnableError("createExperiments")
     res.status(200).json(result);
 }

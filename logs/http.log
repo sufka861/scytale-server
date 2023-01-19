@@ -5,3 +5,7 @@ Thu, 19 Jan 2023 06:59:31 GMT --> GET /prs - - ms
 Thu, 19 Jan 2023 07:00:52 GMT --> GET /prs 200 205.828 ms
 Thu, 19 Jan 2023 07:07:00 GMT --> GET /prs 200 142.452 ms
 Thu, 19 Jan 2023 07:09:53 GMT --> GET /prs 200 140.314 ms
+Thu, 19 Jan 2023 07:18:01 GMT --> POST /prs 200 169.196 ms
+Thu, 19 Jan 2023 07:23:46 GMT --> POST /prs 200 16466.343 ms
+Thu, 19 Jan 2023 07:26:49 GMT --> POST /prs 200 140.545 ms
+Thu, 19 Jan 2023 07:32:36 GMT --> POST /prs 200 138.033 ms
