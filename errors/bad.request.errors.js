@@ -13,4 +13,4 @@ class BodyNotSent extends BadRequest {
     }
 }
 
-module.exports = {PropertyExist, BodyNotSent, ExperimentNotActive};
+module.exports = {BadRequest, BodyNotSent};

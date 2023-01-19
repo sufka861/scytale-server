@@ -9,7 +9,7 @@ const app = express();
 const {errorHandler} = require("./middleware/error.handler.mw");
 const logPath = path.join(__dirname, "logs", "http.log");
 const port = process.env.PORT || 3000;
-// const {testRouter} = require("./router/external.routes");
+const {prRouter} = require("./router/pr.router");
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
@@ -20,8 +20,7 @@ app.use(
 );
 app.use(cors());
 
-// Routes goes here!
-// app.use("/test", testRouter);
+app.use("/prs", prRouter);
 
 app.use(errorHandler);
 
@@ -29,4 +28,4 @@ app.listen(port, () => {
     console.log(`Server is listening on port ${port}...`);
 });
 
-const prRepository = require("./repositories/pr.repository");
+// const prRepository = require("./repositories/pr.repository");
