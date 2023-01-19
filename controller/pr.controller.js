@@ -6,7 +6,6 @@ const {BodyNotSent} = require("../errors/bad.request.errors");
 
 const getAllPrs = async (req, res) => {
     const result = await prRepository.find();
-    console.log(result);
     if (!result) throw new ServerUnableError("getAllExperiments")
     res.status(200).json(result);
 };
