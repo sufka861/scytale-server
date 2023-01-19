@@ -46,49 +46,5 @@ module.exports = {
     deletePr
 }
 
-// const getExperimentById = async (req, res) => {
-//     if (!req.params.experiment_id) throw new PropertyNotFound("experiment_id");
-//     const experiment_id = req.params.experiment_id;
-//     const result = await ExperimentRepository.retrieve(experiment_id);
-//     if (!result) throw new ServerUnableError("getExperimentById")
-//     res.status(200).json(result);
-// };
-//
-// const getExperimentsByAccountId = async (req, res) => {
-//     if (!req.params.account_id) throw new PropertyNotFound("account_id");
-//     const account_id = req.params.account_id;
-//     const result = await ExperimentRepository.findByAttribute("account_id", account_id);
-//     if (!result) throw new ServerUnableError("getExperimentsByAccountId")
-//     res.status(200).json(result);
-// }
-//
-// const getExperimentsAB = async (req, res) => {
-//     if (!req.params.account_id) throw new PropertyNotFound("account_id");
-//     const account_id = req.params.account_id;
-//     const result = await ExperimentRepository.findByTwoAttributes("type", "a-b", "account_id", account_id);
-//     if (!result) throw new ServerUnableError("getExperimentsAB")
-//     res.status(200).json(result);
-//
-// }
-//
-// const getExperimentsFF = async (req, res) => {
-//     if (!req.params.account_id) throw new PropertyNotFound("account_id");
-//     const account_id = req.params.account_id;
-//     const result = await ExperimentRepository.findByTwoAttributes("type", "f-f", "account_id", account_id);
-//     if (!result) throw new ServerUnableError("getExperimentsFF")
-//     res.status(200).json(result);
-//
-// }
-//
-// const getExperimentsByDate = async (req, res) => {
-//     if (!req.query.year && req.query.month) throw new PropertyNotFound("year and month");
-//     const year = req.query.year;
-//     const month = req.query.month;
-//     const result = await ExperimentRepository.findByDate(year, month);
-//     if (!result) throw new ServerUnableError("getExperimentsByDate")
-//     res.status(200).json(result);
-// }
-//
-
 
 

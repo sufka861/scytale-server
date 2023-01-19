@@ -23,25 +23,6 @@ module.exports = class MongoStorage {
         return this.Model.find({});
     }
 
-    findByTwoAttributes(key, value, key2, value2) {
-        const obj = {};
-        obj[key] = value;
-        if (key2 && value2) {
-            obj[key2] = value2;
-        }
-        return this.Model.find(obj);
-    }
-
-    findByAttribute(key, value) {
-        const obj = {};
-        obj[key] = value;
-        return this.Model.find(obj);
-    }
-
-    retrieve(id) {
-        return this.Model.findById(id);
-    }
-
     create(data) {
         const entity = new this.Model(data);
         return entity.save();
