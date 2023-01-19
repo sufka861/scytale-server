@@ -57,4 +57,8 @@ module.exports = class MongoStorage {
             runValidators: true,
         });
     }
+
+    count() {
+        return this.Model.countDocuments({});
+    }
 };
