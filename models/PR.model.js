@@ -7,20 +7,12 @@ const PRSchema = new Schema(
             author: {type: Object, required: true},
             status: {type: String, required: true},
             labels: {type: [String]},
-            // date: {
-            //     type: Date,
-            //     validate: {
-            //         validator: (date) => {
-            //             return date >= Date.now();
-            //         },
-            //         message: "Time of PR cannot be prior to this time"
-            //     }
-            // }
+            pr_number: {type: Number, required: true},
+            date: {type: Date, required: true}
         },
         {
             collection: "pull-requests"
         }
-    )
-;
+    );
 
 module.exports = model("PRModel", PRSchema);

@@ -17,6 +17,7 @@ const createPr = async (req, res) => {
     const date = Date.now();
     const dateObj = {date: date};
     const data = {...req.body, ...prCounterObj, ...dateObj};
+    console.log(data);
     const result = await prRepository.create(data);
     if (!result) throw new ServerUnableError("create PR")
     res.status(200).json(result);
