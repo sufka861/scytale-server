@@ -1,1 +1,2 @@
 error: Unexpected token } in JSON at position 294 {"timestamp":"2023-01-19T08:02:28.098Z"}
+error: PRModel validation failed: date: Time of PR cannot be prior to this time {"timestamp":"2023-01-19T09:35:50.535Z"}
