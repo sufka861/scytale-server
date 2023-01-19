@@ -6,6 +6,7 @@ const {BodyNotSent} = require("../errors/bad.request.errors");
 
 const getAllPrs = async (req, res) => {
     const result = await prRepository.find();
+    console.log(result);
     if (!result) throw new ServerUnableError("getAllExperiments")
     res.status(200).json(result);
 };
@@ -15,6 +16,11 @@ const createPr = async (req, res) => {
     const result = await prRepository.create(req.body)
     if (!result) throw new ServerUnableError("createExperiments")
     res.status(200).json(result);
+}
+
+module.exports = {
+    getAllPrs,
+    createPr
 }
 
 // const getExperimentById = async (req, res) => {
@@ -78,7 +84,3 @@ const createPr = async (req, res) => {
 //     res.status(200).json(result);
 // }
 
-module.exports = {
-    getAllPrs,
-    createPr
-}

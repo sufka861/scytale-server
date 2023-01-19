@@ -1,8 +1,8 @@
-const { Router} = require ('express');
+const prRouter = require ('express').Router();
 const prController = require('../controller/pr.controller');
-const prRouter = new Router();
+// const prRouter = new Router();
 
-prRouter.get("/prs", prController.getAllPrs);
-prRouter.post("/prs", prController.createPr)
+prRouter.get("/", prController.getAllPrs);
+prRouter.post("/", prController.createPr)
 
 module.exports = { prRouter };
