@@ -8,8 +8,8 @@ const PRSchema = new Schema(
             type: Object,
             required: true,
             properties: {
-                first_name: {type: String, required: true},
-                last_name: {type: String, required: true}
+                firstName: {type: String, required: true},
+                lastName: {type: String, required: true}
             }
         },
         status: {
@@ -23,8 +23,8 @@ const PRSchema = new Schema(
             },
         },
         labels: [String],
-        pr_number: {type: Number, required: true, min: 1},
-        date: {type: Date, required: true}
+        prNumber: {type: Number, required: true, min: 1},
+        createdAt: {type: Date, required: true}
     },
     {
         collection: "pull-requests"
