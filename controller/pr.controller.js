@@ -13,9 +13,9 @@ const getAllPrs = async (req, res) => {
 const createPr = async (req, res) => {
     if (!bodyValidator(req)) throw new BodyNotSent();
     const prCounter = await prRepository.count() + 1;
-    const prCounterObj= {pr_number: prCounter};
+    const prCounterObj= {prNumber: prCounter};
     const createdAt = Date.now();
-    const createdAtObj = {date: createdAt};
+    const createdAtObj = {createdAt: createdAt};
     const data = {...req.body, ...prCounterObj, ...createdAtObj};
     const result = await prRepository.create(data);
     if (!result) throw new ServerUnableError("create PR")

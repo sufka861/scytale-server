@@ -7,3 +7,9 @@ error: Unable to update PR due to internal server error {"timestamp":"2023-01-19
 error: PRModel validation failed: status: Status could only be defines as Draft / Closed / Open {"timestamp":"2023-01-19T20:43:38.401Z"}
 error: PRModel validation failed: status: Status could only be defines as Draft / Closed / Open {"timestamp":"2023-01-19T20:43:46.910Z"}
 error: PRModel validation failed: author: Path `author` is required. {"timestamp":"2023-01-19T20:44:49.251Z"}
+error: Unable to update PR due to internal server error {"timestamp":"2023-01-21T19:06:43.583Z"}
+error: Body not sent {"timestamp":"2023-01-23T10:09:02.412Z"}
+error: Body not sent {"timestamp":"2023-01-23T10:09:02.427Z"}
+error: PRModel validation failed: createdAt: Path `createdAt` is required., prNumber: Path `prNumber` is required., status: Status could only be defines as Draft / Closed / Open {"timestamp":"2023-01-23T10:31:42.926Z"}
+error: PRModel validation failed: createdAt: Path `createdAt` is required., prNumber: Path `prNumber` is required., status: Status could only be defines as Draft / Closed / Open {"timestamp":"2023-01-23T10:48:31.635Z"}
+error: PRModel validation failed: createdAt: Path `createdAt` is required., prNumber: Path `prNumber` is required. {"timestamp":"2023-01-23T10:52:44.967Z"}
