@@ -6,7 +6,7 @@ const logger = createLogger({
     format: combine(timestamp(), simple()),
     transports: [
         new transports.File({
-            filename: "utils/logs/error.log",
+            filename: "logs/error.log",
             level: "error",
             timestamp: true,
         }),
