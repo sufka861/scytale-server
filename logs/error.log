@@ -1,0 +1,15 @@
+error: Unexpected token } in JSON at position 294 {"timestamp":"2023-01-19T08:02:28.098Z"}
+error: PRModel validation failed: date: Time of PR cannot be prior to this time {"timestamp":"2023-01-19T09:35:50.535Z"}
+error: result is not defined {"timestamp":"2023-01-19T11:03:33.744Z"}
+error: Unable to delete PR due to internal server error {"timestamp":"2023-01-19T18:45:24.922Z"}
+error: Cast to ObjectId failed for value ":pr_id" (type string) at path "_id" for model "PRModel" {"timestamp":"2023-01-19T18:46:00.895Z"}
+error: Unable to update PR due to internal server error {"timestamp":"2023-01-19T20:18:02.815Z"}
+error: PRModel validation failed: status: Status could only be defines as Draft / Closed / Open {"timestamp":"2023-01-19T20:43:38.401Z"}
+error: PRModel validation failed: status: Status could only be defines as Draft / Closed / Open {"timestamp":"2023-01-19T20:43:46.910Z"}
+error: PRModel validation failed: author: Path `author` is required. {"timestamp":"2023-01-19T20:44:49.251Z"}
+error: Unable to update PR due to internal server error {"timestamp":"2023-01-21T19:06:43.583Z"}
+error: Body not sent {"timestamp":"2023-01-23T10:09:02.412Z"}
+error: Body not sent {"timestamp":"2023-01-23T10:09:02.427Z"}
+error: PRModel validation failed: createdAt: Path `createdAt` is required., prNumber: Path `prNumber` is required., status: Status could only be defines as Draft / Closed / Open {"timestamp":"2023-01-23T10:31:42.926Z"}
+error: PRModel validation failed: createdAt: Path `createdAt` is required., prNumber: Path `prNumber` is required., status: Status could only be defines as Draft / Closed / Open {"timestamp":"2023-01-23T10:48:31.635Z"}
+error: PRModel validation failed: createdAt: Path `createdAt` is required., prNumber: Path `prNumber` is required. {"timestamp":"2023-01-23T10:52:44.967Z"}

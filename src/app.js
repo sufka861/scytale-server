@@ -6,7 +6,7 @@ const path = require("path");
 const fs = require("fs");
 const app = express();
 const {errorHandler} = require("./utils/error.handler");
-const logPath = path.join(__dirname, "utils/logs", "/http.log");
+const logPath = path.join(__dirname, "../logs", "/http.log");
 const {prRouter} = require("./router/pr.router");
 
 app.use(express.json());
