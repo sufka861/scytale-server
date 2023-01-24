@@ -1,8 +1,8 @@
 const prRepository = require("../repositories/pr.repository");
-const {PropertyNotFound} = require("../errors/not.found.errors");
-const {ServerUnableError} = require("../errors/internal.errors");
-const {bodyValidator} = require("../errors/body.validator");
-const {BodyNotSent} = require("../errors/bad.request.errors");
+const {PropertyNotFound} = require("../utils/errors/not.found.errors");
+const {ServerUnableError} = require("../utils/errors/internal.errors");
+const {bodyValidator} = require("../utils/errors/body.validator");
+const {BodyNotSent} = require("../utils/errors/bad.request.errors");
 
 const getAllPrs = async (req, res) => {
     const result = await prRepository.find();
