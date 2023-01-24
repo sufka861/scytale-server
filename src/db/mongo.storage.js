@@ -30,10 +30,6 @@ module.exports = class MongoStorage {
         return entity.save();
     }
 
-    delete(id) {
-        return this.Model.findByIdAndDelete(id);
-    }
-
     update(id, data) {
         return this.Model.findByIdAndUpdate(id, data, {
             new: true,

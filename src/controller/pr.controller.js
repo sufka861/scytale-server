@@ -30,17 +30,8 @@ const updatePr = async (req, res) => {
     res.status(200).json(result);
 };
 
-const deletePr = async (req, res) => {
-    if (!req.params.prId) throw new PropertyNotFound('prId');
-    const prId = req.params.prId;
-    const result = await prRepository.delete(prId);
-    if (!result) throw new ServerUnableError('delete PR');
-    res.status(200).json(result);
-};
-
 module.exports = {
     getAllPrs,
     createPr,
     updatePr,
-    deletePr,
 };
