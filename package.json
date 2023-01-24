@@ -1,31 +1,40 @@
 {
-  "name": "scytale-pr",
-  "version": "1.0.0",
-  "description": "scytale-PR home task for Suf Karmon",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
-    "start": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sufka861/scytale-PR.git"
-  },
-  "author": "Suf Karmon",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sufka861/scytale-PR/issues"
-  },
-  "homepage": "https://github.com/sufka861/scytale-PR#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "express-async-errors": "^3.1.1",
-    "mongoose": "^6.8.4",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.20",
-    "winston": "^3.8.2"
-  }
+    "name": "scytale-pr",
+    "version": "1.0.0",
+    "description": "scytale-PR home task for Suf Karmon",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon index.js",
+        "start": "nodemon index.js",
+        "format:check": "prettier --check .",
+        "format": "prettier --write .",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sufka861/scytale-PR.git"
+    },
+    "author": "Suf Karmon",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sufka861/scytale-PR/issues"
+    },
+    "homepage": "https://github.com/sufka861/scytale-PR#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "express-async-errors": "^3.1.1",
+        "mongoose": "^6.8.4",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.20",
+        "winston": "^3.8.2"
+    },
+    "devDependencies": {
+        "eslint": "^8.32.0",
+        "eslint-config-prettier": "^8.6.0",
+        "prettier": "^2.8.3"
+    }
 }

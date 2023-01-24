@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
-mongoose.set("strictQuery", false);
-const Path = require("path");
+const mongoose = require('mongoose');
+mongoose.set('strictQuery', false);
+const Path = require('path');
 
 module.exports = class MongoStorage {
     constructor(entity) {
@@ -15,7 +15,9 @@ module.exports = class MongoStorage {
         const connectionUrl = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_CLUSTER}.vem43fe.mongodb.net/?retryWrites=true&w=majority`;
         mongoose
             .connect(connectionUrl)
-            .then(() => console.log(`connected to ${this.entityName} collection`))
+            .then(() =>
+                console.log(`connected to ${this.entityName} collection`)
+            )
             .catch((err) => console.log(`connection error: ${err}`));
     }
 

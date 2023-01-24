@@ -8,9 +8,9 @@ class BadRequest extends Error {
 
 class BodyNotSent extends BadRequest {
     constructor() {
-        super("Body not sent");
+        super('Body not sent');
         this.name = this.constructor.name;
     }
 }
 
-module.exports = {BadRequest, BodyNotSent};
+module.exports = { BadRequest, BodyNotSent };

@@ -1,13 +1,13 @@
-const { createLogger, transports, format } = require("winston");
+const { createLogger, transports, format } = require('winston');
 const { combine, timestamp, simple } = format;
 
 const logger = createLogger({
-    level: "error",
+    level: 'error',
     format: combine(timestamp(), simple()),
     transports: [
         new transports.File({
-            filename: "logs/error.log",
-            level: "error",
+            filename: 'logs/error.log',
+            level: 'error',
             timestamp: true,
         }),
     ],
