@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
     logger(':date --> :method :url :status :response-time ms', {
         stream: fs.createWriteStream(logPath, { flags: 'a' }),
-    })
+    }),
 );
 app.use(cors());
 

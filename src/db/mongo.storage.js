@@ -7,7 +7,7 @@ module.exports = class MongoStorage {
         this.entityName = entity.charAt(0).toUpperCase() + entity.slice(1);
         this.Model = require(Path.join(
             __dirname,
-            `../models/${this.entityName}.model.js`
+            `../models/${this.entityName}.model.js`,
         ));
         this.connect();
     }
@@ -16,7 +16,7 @@ module.exports = class MongoStorage {
         mongoose
             .connect(connectionUrl)
             .then(() =>
-                console.log(`connected to ${this.entityName} collection`)
+                console.log(`connected to ${this.entityName} collection`),
             )
             .catch((err) => console.log(`connection error: ${err}`));
     }
