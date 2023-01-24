@@ -3,7 +3,7 @@ const prController = require('../controller/pr.controller');
 
 prRouter.get("/", prController.getAllPrs);
 prRouter.post("/", prController.createPr)
-prRouter.put("/:pr_id", prController.updatePr)
-prRouter.delete("/:pr_id", prController.deletePr)
+prRouter.put("/:prId", prController.updatePr)
+prRouter.delete("/:prId", prController.deletePr)
 
 module.exports = { prRouter };

@@ -1,7 +1,7 @@
 const prRepository = require("../repositories/pr.repository");
 const {PropertyNotFound} = require("../utils/errors/not.found.errors");
 const {ServerUnableError} = require("../utils/errors/internal.errors");
-const {bodyValidator} = require("../utils/errors/body.validator");
+const {bodyValidator} = require("../utils/body.validator");
 const {BodyNotSent} = require("../utils/errors/bad.request.errors");
 
 const getAllPrs = async (req, res) => {
@@ -23,17 +23,17 @@ const createPr = async (req, res) => {
 }
 
 const updatePr = async (req, res) => {
-    if (!req.params.pr_id) throw new PropertyNotFound("pr_id");
-    const pr_id = req.params.pr_id;
-    const result = await prRepository.update(pr_id, req.body)
+    if (!req.params.prId) throw new PropertyNotFound("prId");
+    const prId = req.params.prId;
+    const result = await prRepository.update(prId, req.body)
     if (!result) throw new ServerUnableError("update PR")
     res.status(200).json(result);
 }
 
 const deletePr = async (req, res) => {
-    if (!req.params.pr_id) throw new PropertyNotFound("pr_id");
-    const prID = req.params.pr_id;
-    const result = await prRepository.delete(prID)
+    if (!req.params.prId) throw new PropertyNotFound("prId");
+    const prId = req.params.prId;
+    const result = await prRepository.delete(prId)
     if (!result) throw new ServerUnableError("delete PR");
     res.status(200).json(result);
 }
