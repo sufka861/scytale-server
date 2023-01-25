@@ -1,5 +1,5 @@
 .idea
 node_modules
 .env
-instructions.md
+../instructions.md
 src/utils/logs
