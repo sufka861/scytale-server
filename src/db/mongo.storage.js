@@ -30,13 +30,6 @@ module.exports = class MongoStorage {
         return entity.save();
     }
 
-    update(id, data) {
-        return this.Model.findByIdAndUpdate(id, data, {
-            new: true,
-            runValidators: true,
-        });
-    }
-
     count() {
         return this.Model.countDocuments({});
     }
