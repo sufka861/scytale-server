@@ -47,6 +47,7 @@ Otherwise the next steps are defined in the 'Scytale-Client' README.md https://g
 7. utils - Holds the logging and error handling.<br />
    7.1 errors - Contains specific error classes that inherit from the generic error class
    7.2 loggers - Directing errors to an error log file, and http requests logs to a http log file
+8. logs - Added automatically, generally would not be uploaded to Git-Hub, but are kept for the sake of seeing the systems functions
 
 ## Enjoy
 
