@@ -7,7 +7,7 @@ The server allows to make RESTful API calls to the 'pull request' DB.<br />
 
 ## Install & Run
 
-1. Clone the project from Git-Hub at: https://github.com/sufka861/scytale-server.git
+1. Clone the project from [Git-Hub](https://github.com/sufka861/scytale-server.git)
 2. cd into the project folder
     ```console
     <YourLocalFolder>:~$ cd scytale-server
@@ -28,8 +28,8 @@ The server allows to make RESTful API calls to the 'pull request' DB.<br />
 
 The server is designed to be used alongside the client app.<br />
 If you wish to try out the server without using the 'Scytale-Client' you may test it with POSTMAN.<br />
-To test the server using POSTMAN use our published API docs to guide you: https://documenter.getpostman.com/view/24139741/2s8ZDX43Ra <br />
-Otherwise the next steps are defined in the 'Scytale-Client' README.md https://github.com/sufka861/scytale-client.git <br />
+To test the server using POSTMAN use our [published API docs](https://documenter.getpostman.com/view/24139741/2s8ZDX43Ra) to guide you<br />
+Otherwise the next steps are defined in the ['Scytale-Client'](https://github.com/sufka861/scytale-client.git) README.md<br />
 
 ## Architecture walk-through
 
